@@ -10,6 +10,31 @@
 #include <dt-bindings/zmk/outputs.h>
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        escape {
+            bindings = <&kp ESC>;
+            key-positions = <13 14>;
+            layers = <0>;
+        };
+
+        backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <15 16>;
+        };
+
+        space {
+            bindings = <&kp SPACE>;
+            key-positions = <41 42>;
+        };
+
+        enter {
+            bindings = <&kp RET>;
+            key-positions = <43 44>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 

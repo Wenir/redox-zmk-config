@@ -21,7 +21,8 @@
 
         backspace {
             bindings = <&kp BACKSPACE>;
-            key-positions = <15 16>;
+            key-positions = <15 14>;
+            layers = <>;
         };
 
         space {

@@ -47,7 +47,7 @@
 
         enter {
             bindings = <&kp RET>;
-            key-positions = <43 44>;
+            key-positions = <43 42>;
             layers = <0>;
         };
     };

@@ -42,11 +42,13 @@
         renter {
             bindings = <&kp RET>;
             key-positions = <52 53>;
+            layers = <0>;
         };
 
         rbackspace {
             bindings = <&kp BACKSPACE>;
             key-positions = <22 23>;
+            layers = <0>;
         };
     };
 

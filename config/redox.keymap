@@ -27,19 +27,13 @@
     combos {
         compatible = "zmk,combos";
 
-        backspace {
+        lbackspace {
             bindings = <&kp BACKSPACE>;
             key-positions = <15 14>;
             layers = <0>;
         };
 
-        space {
-            bindings = <&kp SPACE>;
-            key-positions = <41 42>;
-            layers = <0>;
-        };
-
-        enter {
+        lenter {
             bindings = <&kp RET>;
             key-positions = <43 42>;
             layers = <0>;
@@ -48,6 +42,11 @@
         renter {
             bindings = <&kp RET>;
             key-positions = <52 53>;
+        };
+
+        rbackspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <22 23>;
         };
     };
 

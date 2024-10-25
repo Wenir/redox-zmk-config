@@ -1,2 +1,6 @@
-.idea
-.DS_Store
+/.west
+/modules
+/zephyr
+/zmk
+/build
+/result

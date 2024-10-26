@@ -28,25 +28,25 @@
         lbackspace {
             bindings = <&kp BACKSPACE>;
             key-positions = <15 14>;
-            layers = <0>;
+            layers = <0 4>;
         };
 
         lenter {
             bindings = <&kp RET>;
             key-positions = <43 42>;
-            layers = <0>;
+            layers = <0 4>;
         };
 
         renter {
             bindings = <&kp RET>;
             key-positions = <52 53>;
-            layers = <0>;
+            layers = <0 4>;
         };
 
         rbackspace {
             bindings = <&kp BACKSPACE>;
             key-positions = <22 23>;
-            layers = <0>;
+            layers = <0 4>;
         };
 
         toggle_game_layer {

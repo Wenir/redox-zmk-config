@@ -22,7 +22,7 @@
         board = "nrfmicro_13";
         shield = "redox_%PART%";
 
-        zephyrDepsHash = "sha256-lwyMQ8Mn34oCBqmc/3l45X9PyrMTLTpa4Z3JlezeWI8=";
+        zephyrDepsHash = "sha256-CU0JB1Cx8kufoBINj+j45eDu7m07HxTxG9Yx/W9r67g=";
 
         meta = {
           description = "ZMK firmware";

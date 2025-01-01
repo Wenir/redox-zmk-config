@@ -24,3 +24,10 @@ jobs:
         with:
           name: zmk_firmware
           path: result
+
+      - run: nix -vL --show-trace build .#reset-firmware
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: reset_firmware
+          path: result

@@ -31,7 +31,25 @@
         };
       };
 
+      reset-firmware = zmk-nix.legacyPackages.${system}.buildSplitKeyboard {
+        name = "reset-firmware";
+
+        src = nixpkgs.lib.sourceFilesBySuffices self [ ".board" ".cmake" ".conf" ".defconfig" ".dts" ".dtsi" ".json" ".keymap" ".overlay" ".shield" ".yml" "_defconfig" ];
+
+        board = "nrfmicro_13";
+        shield = "settings_reset";
+
+        zephyrDepsHash = "sha256-lT9ItZor+jmkfrCL5KwukGux+PTBnk3JDMo6lPaeiKs=";
+
+        meta = {
+          description = "Reset settings";
+          license = nixpkgs.lib.licenses.mit;
+          platforms = nixpkgs.lib.platforms.all;
+        };
+      };
+
       flash = zmk-nix.packages.${system}.flash.override { inherit firmware; };
+      flash-reset = zmk-nix.packages.${system}.flash.override { firmware = reset-firmware; };
       update = zmk-nix.packages.${system}.update;
     });
 

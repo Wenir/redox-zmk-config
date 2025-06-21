@@ -28,7 +28,7 @@
         lbackspace {
             bindings = <&kp BACKSPACE>;
             key-positions = <15 14>;
-            layers = <0 1>;
+            layers = <0>;
         };
 
         lenter {

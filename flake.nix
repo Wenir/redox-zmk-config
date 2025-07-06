@@ -22,7 +22,7 @@
         board = "nrfmicro_13";
         shield = "redox_%PART%";
 
-        zephyrDepsHash = "sha256-lT9ItZor+jmkfrCL5KwukGux+PTBnk3JDMo6lPaeiKs=";
+        zephyrDepsHash = "sha256-96B76RIRunGyAXVzJGe7H71BxZ52wklLp/W54OwPpS4=";
 
         meta = {
           description = "ZMK firmware";
@@ -39,7 +39,7 @@
         board = "nrfmicro_13";
         shield = "settings_reset";
 
-        zephyrDepsHash = "sha256-lT9ItZor+jmkfrCL5KwukGux+PTBnk3JDMo6lPaeiKs=";
+        zephyrDepsHash = "sha256-96B76RIRunGyAXVzJGe7H71BxZ52wklLp/W54OwPpS4=";
 
         meta = {
           description = "Reset settings";

@@ -107,5 +107,15 @@
 &trans        &trans        &trans        &trans                               &trans            &trans      &trans  &trans  &trans                    &trans                &trans        &trans        &trans        &trans
             >;
         };
+
+        left_numpad {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                                  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &kp C   &kp S   &kp D   &kp F   &trans  &trans                  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans          &trans          &trans  &trans  &trans  &trans
+            >;
+        };
     };
 };

@@ -43,4 +43,4 @@ jobs:
         if: ${{ contains(fromJSON('["created", "updated"]'), steps.create-pr.outputs.pull-request-operation) }}
         with:
           workflow: ci.yml
-          ref: refs/heads/update_zmk_config_deps
+          ref: refs/heads/update_deps

@@ -22,20 +22,22 @@ jobs:
 
       - uses: DeterminateSystems/nix-installer-action@v12
 
+      - run: nix -vL flake update
+
       - run: nix -vL run --show-trace .#update
 
       - id: create-pr
         uses: peter-evans/create-pull-request@v6
         with:
-          branch: update_zmk_config_deps
+          branch: update_deps
           delete-branch: true
           committer: 'github-actions[bot] <github-actions[bot]@users.noreply.github.com>'
           author: 'github-actions[bot] <github-actions[bot]@users.noreply.github.com>'
-          commit-message: 'config,nix: update deps'
-          title: 'config,nix: update deps'
+          commit-message: 'update deps'
+          title: 'update deps'
           labels: 'dependencies'
           body: |
-            Automated bump of ZMK dependencies
+            Automated bump of dependencies
 
       - uses: benc-uk/workflow-dispatch@v1
         if: ${{ contains(fromJSON('["created", "updated"]'), steps.create-pr.outputs.pull-request-operation) }}
